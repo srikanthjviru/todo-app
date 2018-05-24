@@ -14,7 +14,6 @@ class Home extends Component {
     this.props.dispatch(addTodo(task));
   };
   deleteTodo = id => {
-    debugger;
     this.props.dispatch(deleteTodo(id));
   };
 
