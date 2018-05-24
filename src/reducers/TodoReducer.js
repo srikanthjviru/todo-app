@@ -13,7 +13,6 @@ export default (state = initialState, action) => {
         { todoList: [action.payload.task || []].concat(state.todoList) }
       );
     case actions.CREATE_TODO:
-      debugger;
       return Object.assign(
         {},
         { todoList: [action.task].concat(state.todoList) || [] }
